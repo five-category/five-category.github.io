@@ -17,24 +17,24 @@
             margin-bottom: 20px;
         }
         
-        /* ★ボタンをまとめるメニュー全体の塊 */
+        /* ボタンをまとめるメニュー全体の塊 */
         .menu {
             display: inline-flex; /* ボタンの長さに合わせた幅にする */
-            gap: 0; /* 1. ボタン同士の隙間をぴったりゼロにする */
+            gap: 0; /* ボタン同士の隙間をぴったりゼロにする */
             margin-bottom: 40px;
             border: 1px solid #e0e0e0; /* メニュー全体の枠線 */
-            border-radius: 50px; /* 2. 左右の端をきれいな半円にする */
-            overflow: hidden; /* 3. 丸くした角からはみ出るボタンの端っこをきれいにカットする */
+            border-radius: 50px; /* 左右の端をきれいな半円にする */
+            overflow: hidden; /* 丸くした角からはみ出るボタンの端っこをきれいにカットする */
         }
         
-        /* ★ボタン個別の設定 */
+        /* ボタン個別の設定 */
         .menu-button {
             display: inline-block;
             background-color: #f8f8f8; /* ボタンの背景（薄いグレー） */
             color: #000000;
             text-decoration: none; /* リンクの下線を消す */
             
-            /* ★高さを文字と同じくらいに抑える設定 */
+            /* 高さを文字と同じくらいに抑える設定 */
             padding: 3px 16px; /* 上下の余白を3pxまで極限に狭くし、文字の高さに合わせました */
             
             font-size: 14px;
@@ -59,16 +59,20 @@
 </head>
 <body>
 
+    <!-- 画面上部のタイトル -->
     <div class="header-title">Homepage of Kanau Shimada</div>
 
+    <!-- 四角いボタンのメニュー（Diaryを追加しました） -->
     <div class="menu">
         <a href="index.html" class="menu-button">Home</a>
         <a href="papers.html" class="menu-button">Papers</a>
         <a href="notes.html" class="menu-button">Notes</a>
         <a href="talks.html" class="menu-button">Talks</a>
+        <a href="diary.html" class="menu-button">Diary</a>
         <a href="links.html" class="menu-button">Links</a>
     </div>
 
+    <!-- ここから下にHomeページの内容を書きます -->
     <p>ここはHomeのページです。</p>
 
 </body>
