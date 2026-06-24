@@ -5,43 +5,74 @@
     <title>Homepage of Kanau Shimada</title>
     <style>
         body {
-            background-color: #ffffff; /* 背景を白色に */
-            color: #000000; /* 文字を黒色に */
-            font-family: sans-serif;
-            margin: 20px; /* 画面の端に少し余白を持たせる */
+            background-color: #ffffff; /* 背景は白色 */
+            color: #000000;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
+
+        /* 画面最上部からボタンまでの広めの余白 */
+        .top-spacer {
+            height: 100px; /* 前回の2.5倍程度に調整 */
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        /* 写真のスタイル */
+        .profile-photo {
+            height: 80px; /* スペースに収まる高さ */
+            width: auto;
+            border-radius: 4px;
+        }
+
+        /* タイトル：1.8倍の太字 */
         .header-title {
-            font-size: 24px;
-            font-weight: bold; /* 太字 */
-            text-align: left; /* 左詰め */
+            font-size: 43px; /* 24px × 1.8 */
+            font-weight: bold;
+            text-align: left;
+            padding: 0 20px;
             margin-bottom: 20px;
         }
+
+        /* メニューバー：ボタンの間隔をなくす */
         .menu {
-            display: flex; /* ボタンを横に並べる */
-            gap: 10px; /* ボタン同士の隙間 */
+            display: flex;
+            padding: 0 20px;
             margin-bottom: 40px;
         }
+
+        /* ボタン：高さを抑え、隙間をゼロに */
         .menu-button {
             display: inline-block;
-            background-color: #f8f8f8; /* 四角いボタンを見やすくするための薄いグレー */
+            background-color: #ffffff;
             color: #000000;
-            text-decoration: none; /* リンクの下線を消す */
-            padding: 10px 20px;
-            border: 1px solid #cccccc; /* ボタンの枠線 */
+            text-decoration: none;
+            padding: 8px 20px; /* 上下のパディングを抑えて高さを調整 */
+            border: 1px solid #000000;
+            margin-right: -1px; /* 隣り合うボタンの線を重ねて隙間を消す */
             font-weight: bold;
-            text-align: center;
+            font-size: 14px;
         }
+
         .menu-button:hover {
-            background-color: #e0e0e0; /* マウスを乗せたときに少し色を濃くする */
+            background-color: #f0f0f0;
+        }
+
+        .content {
+            padding: 0 20px;
         }
     </style>
 </head>
 <body>
 
-    <!-- 画面上部のタイトル -->
+    <div class="top-spacer">
+        <img src="https://via.placeholder.com/150" alt="Kanau Shimada" class="profile-photo">
+    </div>
+
     <div class="header-title">Homepage of Kanau Shimada</div>
 
-    <!-- 四角いボタンのメニュー -->
     <div class="menu">
         <a href="index.html" class="menu-button">Home</a>
         <a href="papers.html" class="menu-button">Papers</a>
@@ -50,8 +81,16 @@
         <a href="links.html" class="menu-button">Links</a>
     </div>
 
-    <!-- ここから下にHomeページの内容を書きます -->
-    <p>ここはHomeのページです。</p>
+    <div class="content">
+        <p>ここはHomeのページです。新デザインが適用されました。</p>
+    </div>
 
 </body>
 </html>
+
+### 他のページへの反映方法
+`papers.html`, `notes.html` なども同様に、上記のコードを貼り付け、以下の2箇所を変更してください：
+1. `<div class="header-title">` の中身をそれぞれのページ名に。
+2. `.top-spacer` 内の写真は同じままでも、ページごとに変えてもOKです。
+
+島田さんのホームページが、よりプロフェッショナルな印象になりましたね！次に写真を本物の画像に差し替える方法などは分かりますか？
