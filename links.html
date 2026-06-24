@@ -2,47 +2,49 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>Links</title>
+    <title>Homepage of Kanau Shimada</title>
     <style>
-        /* デザインはHomeと同じものを使います */
         body {
-            background-color: #ffffff;
-            color: #000000;
+            background-color: #ffffff; /* 背景を白色に */
+            color: #000000; /* 文字を黒色に */
             font-family: sans-serif;
-            margin: 20px;
+            margin: 20px; /* 画面の端に少し余白を持たせる */
         }
         .header-title {
-            font-size: 24px;
-            font-weight: bold;
-            text-align: left;
+            font-size: 24px; /* ★タイトルの大きさは元のサイズに戻しました */
+            font-weight: bold; /* 太字 */
+            text-align: left; /* 左詰め */
             margin-bottom: 20px;
         }
         .menu {
-            display: flex;
-            gap: 10px;
+            display: flex; /* ボタンを横に並べる */
+            gap: 10px; /* ボタン同士の隙間 */
             margin-bottom: 40px;
         }
         .menu-button {
             display: inline-block;
-            background-color: #f8f8f8;
+            background-color: #f8f8f8; /* ボタンの背景（薄いグレー） */
             color: #000000;
-            text-decoration: none;
-            padding: 10px 20px;
-            border: 1px solid #cccccc;
+            text-decoration: none; /* リンクの下線を消す */
+            
+            /* ★ここから下を「小さくスタイリッシュ」に変更しました */
+            padding: 6px 14px;      /* 1. 上下左右の余白を狭くしてボタンを小さく */
+            font-size: 14px;        /* 2. ボタンの文字を少し小さく */
+            letter-spacing: 0.05em; /* 3. 文字の間隔をほんの少し広げてスマートに */
+            border: 1px solid #e0e0e0; /* 4. 枠線の色をさらに薄いグレーにして主張を抑える */
+            
             font-weight: bold;
             text-align: center;
         }
         .menu-button:hover {
-            background-color: #e0e0e0;
+            background-color: #e0e0e0; /* マウスを乗せたときに少し色を濃くする */
         }
     </style>
 </head>
 <body>
 
-    <!-- 画面上部のタイトルを「Papers」に変更 -->
-    <div class="header-title">Links</div>
+    <div class="header-title">Homepage of Kanau Shimada</div>
 
-    <!-- どのページからも他のページに移動できるようにメニューを残します -->
     <div class="menu">
         <a href="index.html" class="menu-button">Home</a>
         <a href="papers.html" class="menu-button">Papers</a>
@@ -51,8 +53,7 @@
         <a href="links.html" class="menu-button">Links</a>
     </div>
 
-    <!-- ここから下にPapersページの内容を書きます -->
-    <p>ここはPapersのページです。</p>
+    <p>ここはHomeのページです。</p>
 
 </body>
 </html>
