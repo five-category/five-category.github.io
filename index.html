@@ -2,45 +2,56 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>私のホームページ</title>
+    <title>Homepage of Kanau Shimada</title>
     <style>
-        /* ここからがCSS（デザイン）です */
         body {
-            background-color: #f5f5dc; /* 背景を優しいクリーム色に */
-            text-align: center; /* 全体を真ん中寄せに */
-            font-family: sans-serif; /* 文字の形をスッキリさせる */
-            color: #333; /* 文字の色を少し柔らかい黒に */
+            background-color: #ffffff; /* 背景を白色に */
+            color: #000000; /* 文字を黒色に */
+            font-family: sans-serif;
+            margin: 20px; /* 画面の端に少し余白を持たせる */
         }
-        h1 {
-            color: #d2691e; /* 見出しをコーヒーみたいな茶色に */
-            margin-top: 50px; /* 上に少し余白を作る */
+        .header-title {
+            font-size: 24px;
+            font-weight: bold; /* 太字 */
+            text-align: left; /* 左詰め */
+            margin-bottom: 20px;
         }
-        .box {
-            background-color: #ffffff; /* 白い箱を作る */
-            padding: 30px; /* 箱の内側の余白 */
-            width: 70%; /* 箱の幅 */
-            margin: 0 auto; /* 箱自体を画面の真ん中に置く */
-            border-radius: 15px; /* 箱の角を丸くする */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 箱に少し影をつける */
+        .menu {
+            display: flex; /* ボタンを横に並べる */
+            gap: 10px; /* ボタン同士の隙間 */
+            margin-bottom: 40px;
         }
-        a {
-            color: #0066cc; /* リンクの色を青に */
+        .menu-button {
+            display: inline-block;
+            background-color: #f8f8f8; /* 四角いボタンを見やすくするための薄いグレー */
+            color: #000000;
+            text-decoration: none; /* リンクの下線を消す */
+            padding: 10px 20px;
+            border: 1px solid #cccccc; /* ボタンの枠線 */
+            font-weight: bold;
+            text-align: center;
+        }
+        .menu-button:hover {
+            background-color: #e0e0e0; /* マウスを乗せたときに少し色を濃くする */
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>こんにちは！</h1>
-        <p>これはGitHubで作った初めてのホームページです。</p>
-        
-        <h2>私の好きなこと</h2>
-        <ul>
-            <li>美味しいコーヒーを飲むこと☕️</li>
-            <li>新しくホームページ作りに挑戦すること💻</li>
-        </ul>
-        
-        <p>これから少しずつページを育てていきます。</p>
-        <p><a href="https://github.com/">GitHubはこちら</a></p>
+
+    <!-- 画面上部のタイトル -->
+    <div class="header-title">Homepage of Kanau Shimada</div>
+
+    <!-- 四角いボタンのメニュー -->
+    <div class="menu">
+        <a href="index.html" class="menu-button">Home</a>
+        <a href="papers.html" class="menu-button">Papers</a>
+        <a href="notes.html" class="menu-button">Notes</a>
+        <a href="talks.html" class="menu-button">Talks</a>
+        <a href="links.html" class="menu-button">Links</a>
     </div>
+
+    <!-- ここから下にHomeページの内容を書きます -->
+    <p>ここはHomeのページです。</p>
+
 </body>
 </html>
