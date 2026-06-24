@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ホームページを作り始めました - Diary</title>
+    <style>
+        /* 基本のデザイン */
+        body { background-color: #ffffff; color: #000000; font-family: sans-serif; margin: 20px; }
+        .header-title { font-size: 24px; font-weight: bold; text-align: left; margin-bottom: 20px; padding-left: 0.5em; }
+        .menu { display: inline-flex; gap: 0; margin-bottom: 40px; border: 1px solid #e0e0e0; border-radius: 50px; overflow: hidden; }
+        .menu-button { display: inline-block; background-color: #f8f8f8; color: #000000; text-decoration: none; padding: 3px 16px; font-size: 14px; letter-spacing: 0.05em; font-weight: bold; text-align: center; border: none; border-right: 1px solid #e0e0e0; }
+        .menu-button:last-child { border-right: none; }
+        .menu-button:hover { background-color: #e0e0e0; }
+
+        /* ★日記の本文ページ用のデザイン */
+        .article-header {
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eeeeee; /* タイトルの下に薄い線を引く */
+        }
+        .article-date {
+            color: #666666;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .article-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .article-body {
+            line-height: 1.8; /* 文章を読みやすくするために行間を少し広くする */
+        }
+        .back-to-list {
+            display: inline-block;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #666666;
+            text-decoration: none;
+        }
+        .back-to-list:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ヘッダーとメニューは同じまま残します -->
+    <div class="header-title">Diary</div>
+    <div class="menu">
+        <a href="index.html" class="menu-button">Home</a>
+        <a href="papers.html" class="menu-button">Papers</a>
+        <a href="notes.html" class="menu-button">Notes</a>
+        <a href="talks.html" class="menu-button">Talks</a>
+        <a href="diary.html" class="menu-button">Diary</a>
+        <a href="links.html" class="menu-button">Links</a>
+    </div>
+
+    <!-- ここから日記の本文です -->
+    <div class="article-header">
+        <div class="article-date">2026.06.24</div>
+        <div class="article-title">ホームページを作り始めました</div>
+    </div>
+
+    <div class="article-body">
+        <p>今日はGitHub Pagesを使って、自分のホームページを作り始めました。</p>
+        <p>少しずつデザインが整っていくのが楽しいです。これからはここに、日々の出来事や思いついたことを記録していこうと思います。</p>
+    </div>
+
+    <!-- 目次へ戻るリンク -->
+    <a href="diary.html" class="back-to-list">← Diary一覧へ戻る</a>
+
+</body>
+</html>
