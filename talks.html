@@ -2,47 +2,54 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>Talks</title>
+    <title>Talks & Seminars</title>
     <style>
-        body {
-            background-color: #ffffff;
-            color: #000000;
-            font-family: sans-serif;
-            margin: 20px;
-        }
-        .header-title {
-            font-size: 24px;
+        /* 基本のデザイン */
+        body { background-color: #ffffff; color: #000000; font-family: sans-serif; margin: 20px; }
+        .header-title { font-size: 24px; font-weight: bold; text-align: left; margin-bottom: 20px; padding-left: 0.5em; }
+        .menu { display: inline-flex; gap: 0; margin-bottom: 40px; border: 1px solid #e0e0e0; border-radius: 50px; overflow: hidden; }
+        .menu-button { display: inline-block; background-color: #f8f8f8; color: #000000; text-decoration: none; padding: 3px 16px; font-size: 14px; letter-spacing: 0.05em; font-weight: bold; text-align: center; border: none; border-right: 1px solid #e0e0e0; }
+        .menu-button:last-child { border-right: none; }
+        .menu-button:hover { background-color: #e0e0e0; }
+
+        /* 見出しのデザイン */
+        .section-title {
+            font-size: 20px;
             font-weight: bold;
-            text-align: left;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 5px;
+        }
+
+        /* リスト用のデザイン */
+        .record-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 15px;
+        }
+        .record-item {
             margin-bottom: 20px;
-            padding-left: 0.5em;
+            line-height: 1.6;
         }
-        .menu {
-            display: inline-flex;
-            gap: 0;
-            margin-bottom: 40px;
-            border: 1px solid #e0e0e0;
-            border-radius: 50px;
-            overflow: hidden;
-        }
-        .menu-button {
-            display: inline-block;
-            background-color: #f8f8f8;
-            color: #000000;
-            text-decoration: none;
-            padding: 3px 16px;
-            font-size: 14px;
-            letter-spacing: 0.05em;
+        .record-title {
+            font-size: 16px;
             font-weight: bold;
-            text-align: center;
-            border: none;
-            border-right: 1px solid #e0e0e0;
+            color: #000000;
         }
-        .menu-button:last-child {
-            border-right: none;
+        .record-link {
+            font-size: 16px;
+            font-weight: bold;
+            color: #000000;
+            text-decoration: underline;
         }
-        .menu-button:hover {
-            background-color: #e0e0e0;
+        .record-link:hover {
+            color: #666666;
+        }
+        .record-info {
+            font-size: 14px;
+            color: #555555;
+            margin-top: 3px;
         }
     </style>
 </head>
@@ -59,7 +66,26 @@
         <a href="links.html" class="menu-button">Links</a>
     </div>
 
-    <p>ここはLinksのページです。</p>
+    <!-- 講演記録のセクション -->
+    <div class="section-title">Talks</div>
+    <ul class="record-list">
+        <li class="record-item">
+            <div class="record-title">On Frobenius--Witt cotangent complex（Frobenius--Witt余接複体について）</div>
+            <div class="record-info"><a href="https://sites.google.com/view/ookayama-alge-young-reseachers/home" target="_blank">Ookayama youth seminor in algebra</a>（大岡山代数系若手セミナー）, Institute of Science Tokyo, 20260501</div>
+        </li>
+        
+    </ul>
+
+    <!-- 自主ゼミ記録のセクション -->
+    <div class="section-title">Seminars</div>
+    <ul class="record-list">
+        <li class="record-item">
+            <!-- 個別のゼミページへのリンク -->
+            <a href="learning-padic-hodge.html" class="record-link">learning:TBA</a>
+            <div class="record-info"></div>
+        </li>
+        
+    </ul>
 
 </body>
 </html>
