@@ -11,7 +11,7 @@
             margin: 20px; /* 画面の端に少し余白を持たせる */
         }
         .header-title {
-            font-size: 24px;
+            font-size: 24px; /* ★タイトルの大きさは元のサイズに戻しました */
             font-weight: bold; /* 太字 */
             text-align: left; /* 左詰め */
             margin-bottom: 20px;
@@ -23,11 +23,16 @@
         }
         .menu-button {
             display: inline-block;
-            background-color: #f8f8f8; /* 四角いボタンを見やすくするための薄いグレー */
+            background-color: #f8f8f8; /* ボタンの背景（薄いグレー） */
             color: #000000;
             text-decoration: none; /* リンクの下線を消す */
-            padding: 10px 20px;
-            border: 1px solid #cccccc; /* ボタンの枠線 */
+            
+            /* ★ここから下を「小さくスタイリッシュ」に変更しました */
+            padding: 6px 14px;      /* 1. 上下左右の余白を狭くしてボタンを小さく */
+            font-size: 14px;        /* 2. ボタンの文字を少し小さく */
+            letter-spacing: 0.05em; /* 3. 文字の間隔をほんの少し広げてスマートに */
+            border: 1px solid #e0e0e0; /* 4. 枠線の色をさらに薄いグレーにして主張を抑える */
+            
             font-weight: bold;
             text-align: center;
         }
