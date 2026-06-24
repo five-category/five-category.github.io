@@ -11,31 +11,47 @@
             margin: 20px; /* 画面の端に少し余白を持たせる */
         }
         .header-title {
-            font-size: 24px; /* ★タイトルの大きさは元のサイズに戻しました */
+            font-size: 24px; /* タイトルの大きさは元のサイズ */
             font-weight: bold; /* 太字 */
             text-align: left; /* 左詰め */
             margin-bottom: 20px;
         }
+        
+        /* ★ボタンをまとめるメニュー全体の塊 */
         .menu {
-            display: flex; /* ボタンを横に並べる */
-            gap: 10px; /* ボタン同士の隙間 */
+            display: inline-flex; /* ボタンの長さに合わせた幅にする */
+            gap: 0; /* 1. ボタン同士の隙間をぴったりゼロにする */
             margin-bottom: 40px;
+            border: 1px solid #e0e0e0; /* メニュー全体の枠線 */
+            border-radius: 50px; /* 2. 左右の端をきれいな半円にする */
+            overflow: hidden; /* 3. 丸くした角からはみ出るボタンの端っこをきれいにカットする */
         }
+        
+        /* ★ボタン個別の設定 */
         .menu-button {
             display: inline-block;
             background-color: #f8f8f8; /* ボタンの背景（薄いグレー） */
             color: #000000;
             text-decoration: none; /* リンクの下線を消す */
             
-            /* ★ここから下を「小さくスタイリッシュ」に変更しました */
-            padding: 6px 14px;      /* 1. 上下左右の余白を狭くしてボタンを小さく */
-            font-size: 14px;        /* 2. ボタンの文字を少し小さく */
-            letter-spacing: 0.05em; /* 3. 文字の間隔をほんの少し広げてスマートに */
-            border: 1px solid #e0e0e0; /* 4. 枠線の色をさらに薄いグレーにして主張を抑える */
+            /* ★高さを文字と同じくらいに抑える設定 */
+            padding: 3px 16px; /* 上下の余白を3pxまで極限に狭くし、文字の高さに合わせました */
             
+            font-size: 14px;
+            letter-spacing: 0.05em;
             font-weight: bold;
             text-align: center;
+            
+            /* ボタン同士の間の線だけを引く設定 */
+            border: none;
+            border-right: 1px solid #e0e0e0; 
         }
+        
+        /* 一番右側のボタンだけは、右の線を消す（全体の枠線と重なって太くなるのを防ぐため） */
+        .menu-button:last-child {
+            border-right: none;
+        }
+        
         .menu-button:hover {
             background-color: #e0e0e0; /* マウスを乗せたときに少し色を濃くする */
         }
