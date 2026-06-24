@@ -4,45 +4,55 @@
     <meta charset="UTF-8">
     <title>Notes</title>
     <style>
-        body {
-            background-color: #ffffff;
-            color: #000000;
-            font-family: sans-serif;
-            margin: 20px;
-        }
-        .header-title {
-            font-size: 24px;
+        /* 基本のデザイン */
+        body { background-color: #ffffff; color: #000000; font-family: sans-serif; margin: 20px; }
+        .header-title { font-size: 24px; font-weight: bold; text-align: left; margin-bottom: 20px; padding-left: 0.5em; }
+        .menu { display: inline-flex; gap: 0; margin-bottom: 40px; border: 1px solid #e0e0e0; border-radius: 50px; overflow: hidden; }
+        .menu-button { display: inline-block; background-color: #f8f8f8; color: #000000; text-decoration: none; padding: 3px 16px; font-size: 14px; letter-spacing: 0.05em; font-weight: bold; text-align: center; border: none; border-right: 1px solid #e0e0e0; }
+        .menu-button:last-child { border-right: none; }
+        .menu-button:hover { background-color: #e0e0e0; }
+
+        /* 見出しのデザイン */
+        .section-title {
+            font-size: 20px;
             font-weight: bold;
-            text-align: left;
-            margin-bottom: 20px;
-            padding-left: 0.5em;
+            margin-top: 35px; /* 上のリストとの間隔を少し広めに取る */
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 5px;
         }
-        .menu {
-            display: inline-flex;
-            gap: 0;
-            margin-bottom: 40px;
-            border: 1px solid #e0e0e0;
-            border-radius: 50px;
-            overflow: hidden;
+
+        /* ノートリスト用のデザイン */
+        .note-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 15px;
         }
-        .menu-button {
-            display: inline-block;
-            background-color: #f8f8f8;
+        .note-item {
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        .note-title {
+            font-size: 16px;
+            font-weight: bold;
             color: #000000;
-            text-decoration: none;
-            padding: 3px 16px;
+            text-decoration: underline;
+        }
+        .note-title:hover {
+            color: #666666;
+        }
+        .note-info {
             font-size: 14px;
-            letter-spacing: 0.05em;
-            font-weight: bold;
-            text-align: center;
-            border: none;
-            border-right: 1px solid #e0e0e0;
+            color: #555555;
+            margin-top: 4px;
         }
-        .menu-button:last-child {
-            border-right: none;
-        }
-        .menu-button:hover {
-            background-color: #e0e0e0;
+        /* 説明文の左側の線 */
+        .note-desc {
+            font-size: 14px;
+            color: #333333;
+            margin-top: 6px;
+            padding-left: 10px;
+            border-left: 3px solid #e0e0e0;
         }
     </style>
 </head>
@@ -59,7 +69,27 @@
         <a href="links.html" class="menu-button">Links</a>
     </div>
 
-    <p>ここはLinksのページです。</p>
+    <div class="section-title">Arithmetic Geometry</div>
+    <ul class="note-list">
+        <li class="note-item">
+            <a href="sample-note1.pdf" class="note-title" target="_blank">
+                p-adic Hodge theory に関する勉強ノート (PDF)
+            </a>
+            <div class="note-info">2026年4月 更新</div>
+            <div class="note-desc">
+                〇〇の論文を読むための準備としてまとめたノートです。
+            </div>
+        </li>
+        <li class="note-item">
+            <a href="sample-note2.pdf" class="note-title" target="_blank">
+                prismatic cohomology 導入 (PDF)
+            </a>
+            <div class="note-info">2025年12月 更新</div>
+            <div class="note-desc">
+                自主ゼミ用のレジュメを加筆修正したものです。
+            </div>
+        </li>
+    </ul>
 
-</body>
-</html>
+    <div class="section-title">Category Theory</div>
+    <ul class="note-list">
