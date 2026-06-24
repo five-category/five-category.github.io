@@ -4,45 +4,51 @@
     <meta charset="UTF-8">
     <title>Papers</title>
     <style>
-        body {
-            background-color: #ffffff;
-            color: #000000;
-            font-family: sans-serif;
-            margin: 20px;
-        }
-        .header-title {
-            font-size: 24px;
+        /* 基本のデザイン */
+        body { background-color: #ffffff; color: #000000; font-family: sans-serif; margin: 20px; }
+        .header-title { font-size: 24px; font-weight: bold; text-align: left; margin-bottom: 20px; padding-left: 0.5em; }
+        .menu { display: inline-flex; gap: 0; margin-bottom: 40px; border: 1px solid #e0e0e0; border-radius: 50px; overflow: hidden; }
+        .menu-button { display: inline-block; background-color: #f8f8f8; color: #000000; text-decoration: none; padding: 3px 16px; font-size: 14px; letter-spacing: 0.05em; font-weight: bold; text-align: center; border: none; border-right: 1px solid #e0e0e0; }
+        .menu-button:last-child { border-right: none; }
+        .menu-button:hover { background-color: #e0e0e0; }
+
+        /* 見出しのデザイン（Homeと同じ） */
+        .section-title {
+            font-size: 20px;
             font-weight: bold;
-            text-align: left;
-            margin-bottom: 20px;
-            padding-left: 0.5em; /* 半文字右にずらす */
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 5px;
         }
-        .menu {
-            display: inline-flex;
-            gap: 0;
-            margin-bottom: 40px;
-            border: 1px solid #e0e0e0;
-            border-radius: 50px;
-            overflow: hidden;
+
+        /* ★新しく追加：論文リスト用のデザイン */
+        .paper-list {
+            list-style-type: none; /* 先頭の黒丸を消す */
+            padding-left: 0;
+            margin-top: 20px;
         }
-        .menu-button {
-            display: inline-block;
-            background-color: #f8f8f8;
+        .paper-item {
+            margin-bottom: 25px; /* 論文ごとの間隔を広めに取る */
+            line-height: 1.6;
+        }
+        .paper-title {
+            font-size: 16px;
+            font-weight: bold;
             color: #000000;
-            text-decoration: none;
-            padding: 3px 16px;
+            text-decoration: underline; /* リンクだと分かるように下線を引く */
+        }
+        .paper-title:hover {
+            color: #666666; /* マウスを乗せた時に少し薄くする */
+        }
+        .paper-authors {
+            font-size: 15px;
+            color: #333333;
+        }
+        .paper-info {
             font-size: 14px;
-            letter-spacing: 0.05em;
-            font-weight: bold;
-            text-align: center;
-            border: none;
-            border-right: 1px solid #e0e0e0;
-        }
-        .menu-button:last-child {
-            border-right: none;
-        }
-        .menu-button:hover {
-            background-color: #e0e0e0;
+            color: #666666;
+            font-style: italic; /* 雑誌名やアーカイブ名を斜体にする */
         }
     </style>
 </head>
@@ -59,7 +65,23 @@
         <a href="links.html" class="menu-button">Links</a>
     </div>
 
-    <p>ここはPapersのページです。</p>
+    <div class="section-title">Preprints / Publications</div>
+
+    <!-- 論文のリスト -->
+    <ul class="paper-list">
+        
+        <li class="paper-item">
+            <!-- タイトルとリンク先（href="URL" の部分を書き換えます） -->
+            <a href="https://arxiv.org/abs/2605.14803" class="paper-title" target="_blank">
+                Frobenius--Witt cotangent complexes
+            </a><br>
+            <!-- 著者名 -->
+            <span class="paper-authors">Kanau Shimada</span><br>
+            <!-- 雑誌名やアーカイブの情報 -->
+            <span class="paper-info">arXiv preprint arXiv:2605.14803, 2026</span>
+        </li>
+
+    </ul>
 
 </body>
 </html>
