@@ -12,7 +12,7 @@
         .menu-button:last-child { border-right: none; }
         .menu-button:hover { background-color: #e0e0e0; }
 
-        /* 見出しのデザイン（Homeと同じ） */
+        /* 見出しのデザイン */
         .section-title {
             font-size: 20px;
             font-weight: bold;
@@ -22,24 +22,24 @@
             padding-bottom: 5px;
         }
 
-        /* ★新しく追加：論文リスト用のデザイン */
+        /* 論文リスト用のデザイン */
         .paper-list {
-            list-style-type: none; /* 先頭の黒丸を消す */
+            list-style-type: none;
             padding-left: 0;
             margin-top: 20px;
         }
         .paper-item {
-            margin-bottom: 25px; /* 論文ごとの間隔を広めに取る */
+            margin-bottom: 25px; 
             line-height: 1.6;
         }
         .paper-title {
             font-size: 16px;
             font-weight: bold;
             color: #000000;
-            text-decoration: underline; /* リンクだと分かるように下線を引く */
+            text-decoration: underline;
         }
         .paper-title:hover {
-            color: #666666; /* マウスを乗せた時に少し薄くする */
+            color: #666666;
         }
         .paper-authors {
             font-size: 15px;
@@ -48,7 +48,28 @@
         .paper-info {
             font-size: 14px;
             color: #666666;
-            font-style: italic; /* 雑誌名やアーカイブ名を斜体にする */
+            font-style: italic;
+        }
+        
+        /* ★新しく追加：クリックで開くコメント用のデザイン */
+        .paper-details {
+            margin-top: 6px; /* 論文情報との隙間 */
+        }
+        .paper-summary {
+            font-size: 13px;
+            color: #888888; /* 控えめな薄いグレー */
+            cursor: pointer; /* マウスを乗せたときに指のマークにする */
+            user-select: none; /* ダブルクリック等で文字が選択されるのを防ぐ */
+        }
+        .paper-summary:hover {
+            color: #333333; /* マウスを乗せたら少し濃くする */
+        }
+        .paper-comment {
+            font-size: 14px;
+            color: #555555;
+            margin-top: 8px; /* 開いたときの「Comment」文字との隙間 */
+            padding-left: 10px;
+            border-left: 3px solid #e0e0e0; /* 左側の薄い線 */
         }
     </style>
 </head>
@@ -67,19 +88,29 @@
 
     <div class="section-title">Preprints / Publications</div>
 
-    <!-- 論文のリスト -->
     <ul class="paper-list">
         
         <li class="paper-item">
-            <!-- タイトルとリンク先（href="URL" の部分を書き換えます） -->
             <a href="https://arxiv.org/abs/2605.14803" class="paper-title" target="_blank">
                 Frobenius--Witt cotangent complexes
             </a><br>
-            <!-- 著者名 -->
             <span class="paper-authors">Kanau Shimada</span><br>
-            <!-- 雑誌名やアーカイブの情報 -->
-            <span class="paper-info">arXiv preprint arXiv:2605.14803, 2026</span>
+            <span class="paper-info">arXiv:2605.14803, 2026</span>
+            
+            <details class="paper-details">
+                <summary class="paper-summary">Comment / Abstract</summary>
+                
+                <div class="paper-comment">
+                   初めての論文。修士２年に上がって最初のセミナーで先生に進捗報告をするように伝えられ、進捗報告をしなくちゃいけないお年頃なのか～と思い研究を始めた。
+                   Frobenius--Witt cotangent complexの構成自体は進捗報告の前日の２時間くらいですぐにできたが、その後勘違いを見つけて、一週間ほどかけて修正した。
+                   その途中で、基本的な性質を証明したり、パーフェクトイド環の場合に消えることを観察したりして、若手向けセミナーで結果を喋らせていただいた。
+                　　この段階では、自明だと思われちゃうかもなあと不安であったため、仙台広島整数論セミナーには参加申し込みしないことにした。
+                    しかしその後、環の正則性の判定法やδ構造の変形理論とのつながりなどの様々な側面が分かり、だいぶ面白いと思えるようになった。
+                </div>
+            </details>
         </li>
+
+       
 
     </ul>
 
