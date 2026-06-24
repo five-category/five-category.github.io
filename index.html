@@ -4,68 +4,33 @@
     <meta charset="UTF-8">
     <title>Homepage of Kanau Shimada</title>
     <style>
-        body {
-            background-color: #ffffff; /* 背景を白色に */
-            color: #000000; /* 文字を黒色に */
-            font-family: sans-serif;
-            margin: 20px; /* 画面の端に少し余白を持たせる */
-        }
-        .header-title {
-            font-size: 24px; /* タイトルの大きさは元のサイズ */
-            font-weight: bold; /* 太字 */
-            text-align: left; /* 左詰め */
-            margin-bottom: 20px;
-            
-            /* ★ここを追加して、タイトルだけを半文字分右にずらしました */
-            padding-left: 0.5em; 
-        }
-        
-        /* ボタンをまとめるメニュー全体の塊 */
-        .menu {
-            display: inline-flex; /* ボタンの長さに合わせた幅にする */
-            gap: 0; /* ボタン同士の隙間をぴったりゼロにする */
-            margin-bottom: 40px;
-            border: 1px solid #e0e0e0; /* メニュー全体の枠線 */
-            border-radius: 50px; /* 左右の端をきれいな半円にする */
-            overflow: hidden; /* 丸くした角からはみ出るボタンの端っこをきれいにカットする */
-        }
-        
-        /* ボタン個別の設定 */
-        .menu-button {
-            display: inline-block;
-            background-color: #f8f8f8; /* ボタンの背景（薄いグレー） */
-            color: #000000;
-            text-decoration: none; /* リンクの下線を消す */
-            
-            /* 高さを文字と同じくらいに抑える設定 */
-            padding: 3px 16px; /* 上下の余白を3pxまで極限に狭くし、文字の高さに合わせました */
-            
-            font-size: 14px;
-            letter-spacing: 0.05em;
+        /* 基本のデザイン */
+        body { background-color: #ffffff; color: #000000; font-family: sans-serif; margin: 20px; }
+        .header-title { font-size: 24px; font-weight: bold; text-align: left; margin-bottom: 20px; padding-left: 0.5em; }
+        .menu { display: inline-flex; gap: 0; margin-bottom: 40px; border: 1px solid #e0e0e0; border-radius: 50px; overflow: hidden; }
+        .menu-button { display: inline-block; background-color: #f8f8f8; color: #000000; text-decoration: none; padding: 3px 16px; font-size: 14px; letter-spacing: 0.05em; font-weight: bold; text-align: center; border: none; border-right: 1px solid #e0e0e0; }
+        .menu-button:last-child { border-right: none; }
+        .menu-button:hover { background-color: #e0e0e0; }
+
+        /* ★新しく追加：見出しとプロフィール文章のデザイン */
+        .section-title {
+            font-size: 20px;
             font-weight: bold;
-            text-align: center;
-            
-            /* ボタン同士の間の線だけを引く設定 */
-            border: none;
-            border-right: 1px solid #e0e0e0; 
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eeeeee; /* 見出しの下に薄い線を引く */
+            padding-bottom: 5px;
         }
-        
-        /* 一番右側のボタンだけは、右の線を消す（全体の枠線と重なって太くなるのを防ぐため） */
-        .menu-button:last-child {
-            border-right: none;
-        }
-        
-        .menu-button:hover {
-            background-color: #e0e0e0; /* マウスを乗せたときに少し色を濃くする */
+        .profile-text {
+            line-height: 1.8; /* 文章の行間を広げて読みやすくする */
+            font-size: 15px;
         }
     </style>
 </head>
 <body>
 
-    <!-- 画面上部のタイトル（少し右にずれます） -->
     <div class="header-title">Homepage of Kanau Shimada</div>
 
-    <!-- 四角いボタンのメニュー -->
     <div class="menu">
         <a href="index.html" class="menu-button">Home</a>
         <a href="papers.html" class="menu-button">Papers</a>
@@ -75,8 +40,27 @@
         <a href="links.html" class="menu-button">Links</a>
     </div>
 
-    <!-- ここから下にHomeページの内容を書きます -->
-    <p>ここはHomeのページです。</p>
+    <!-- ★ここから下が自己紹介のエリアです -->
+    <div class="section-title">About</div>
+    
+    <div class="profile-text">
+        <p>こんにちは、私の名前は島田要歌です。東京科学大学の修士２年生です。<br>
+        専門分野は数論幾何学で、特に<br>
+            <ul>
+                <li>p-adic Hodge theory</li>
+                <li>prismatic cohomology</li>
+                <li>Frobenius--Witt differentials</li>
+            </ul>
+        といったテーマに興味を持って研究しています。また、<br>
+        <ul>
+                <li>condensed mathematics</li>
+                <li>p-adic Langlands program</li>
+                <li>category theory</li>
+                <li>commutative rings of mixed characteristic</li>
+            </ul>
+        などを学んだり学ぼうとしたりしています。</p>
+    
+    </div>
 
 </body>
 </html>
