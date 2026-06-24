@@ -2,49 +2,47 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>Homepage of Kanau Shimada</title>
+    <title>Links</title>
     <style>
+        /* デザインはHomeと同じものを使います */
         body {
-            background-color: #ffffff; /* 背景を白色に */
-            color: #000000; /* 文字を黒色に */
+            background-color: #ffffff;
+            color: #000000;
             font-family: sans-serif;
-            margin: 20px; /* 画面の端に少し余白を持たせる */
+            margin: 20px;
         }
         .header-title {
-            font-size: 24px; /* ★タイトルの大きさは元のサイズに戻しました */
-            font-weight: bold; /* 太字 */
-            text-align: left; /* 左詰め */
+            font-size: 24px;
+            font-weight: bold;
+            text-align: left;
             margin-bottom: 20px;
         }
         .menu {
-            display: flex; /* ボタンを横に並べる */
-            gap: 10px; /* ボタン同士の隙間 */
+            display: flex;
+            gap: 10px;
             margin-bottom: 40px;
         }
         .menu-button {
             display: inline-block;
-            background-color: #f8f8f8; /* ボタンの背景（薄いグレー） */
+            background-color: #f8f8f8;
             color: #000000;
-            text-decoration: none; /* リンクの下線を消す */
-            
-            /* ★ここから下を「小さくスタイリッシュ」に変更しました */
-            padding: 6px 14px;      /* 1. 上下左右の余白を狭くしてボタンを小さく */
-            font-size: 14px;        /* 2. ボタンの文字を少し小さく */
-            letter-spacing: 0.05em; /* 3. 文字の間隔をほんの少し広げてスマートに */
-            border: 1px solid #e0e0e0; /* 4. 枠線の色をさらに薄いグレーにして主張を抑える */
-            
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #cccccc;
             font-weight: bold;
             text-align: center;
         }
         .menu-button:hover {
-            background-color: #e0e0e0; /* マウスを乗せたときに少し色を濃くする */
+            background-color: #e0e0e0;
         }
     </style>
 </head>
 <body>
 
-    <div class="header-title">Homepage of Kanau Shimada</div>
+    <!-- 画面上部のタイトルを「Papers」に変更 -->
+    <div class="header-title">Links</div>
 
+    <!-- どのページからも他のページに移動できるようにメニューを残します -->
     <div class="menu">
         <a href="index.html" class="menu-button">Home</a>
         <a href="papers.html" class="menu-button">Papers</a>
@@ -53,7 +51,8 @@
         <a href="links.html" class="menu-button">Links</a>
     </div>
 
-    <p>ここはHomeのページです。</p>
+    <!-- ここから下にPapersページの内容を書きます -->
+    <p>ここはPapersのページです。</p>
 
 </body>
 </html>
