@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>私のホームページ</title>
+    <style>
+        /* ここからがCSS（デザイン）です */
+        body {
+            background-color: #f5f5dc; /* 背景を優しいクリーム色に */
+            text-align: center; /* 全体を真ん中寄せに */
+            font-family: sans-serif; /* 文字の形をスッキリさせる */
+            color: #333; /* 文字の色を少し柔らかい黒に */
+        }
+        h1 {
+            color: #d2691e; /* 見出しをコーヒーみたいな茶色に */
+            margin-top: 50px; /* 上に少し余白を作る */
+        }
+        .box {
+            background-color: #ffffff; /* 白い箱を作る */
+            padding: 30px; /* 箱の内側の余白 */
+            width: 70%; /* 箱の幅 */
+            margin: 0 auto; /* 箱自体を画面の真ん中に置く */
+            border-radius: 15px; /* 箱の角を丸くする */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 箱に少し影をつける */
+        }
+        a {
+            color: #0066cc; /* リンクの色を青に */
+        }
+    </style>
 </head>
 <body>
-    <h1>こんにちは！</h1>
-    <p>これはGitHubで作った初めてのホームページです。</p>
+    <div class="box">
+        <h1>こんにちは！</h1>
+        <p>これはGitHubで作った初めてのホームページです。</p>
+        
+        <h2>私の好きなこと</h2>
+        <ul>
+            <li>美味しいコーヒーを飲むこと☕️</li>
+            <li>新しくホームページ作りに挑戦すること💻</li>
+        </ul>
+        
+        <p>これから少しずつページを育てていきます。</p>
+        <p><a href="https://github.com/">GitHubはこちら</a></p>
+    </div>
 </body>
 </html>
