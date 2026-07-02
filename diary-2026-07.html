@@ -1,1 +1,95 @@
-a
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>2026年7月 - Diary</title>
+    <style>
+        /* 基本のデザイン */
+        body { background-color: #ffffff; color: #000000; font-family: sans-serif; margin: 20px; }
+        .header-title { font-size: 24px; font-weight: bold; text-align: left; margin-bottom: 20px; padding-left: 0.5em; }
+        .menu { display: inline-flex; gap: 0; margin-bottom: 40px; border: 1px solid #e0e0e0; border-radius: 50px; overflow: hidden; }
+        .menu-button { display: inline-block; background-color: #f8f8f8; color: #000000; text-decoration: none; padding: 3px 16px; font-size: 14px; letter-spacing: 0.05em; font-weight: bold; text-align: center; border: none; border-right: 1px solid #e0e0e0; }
+        .menu-button:last-child { border-right: none; }
+        .menu-button:hover { background-color: #e0e0e0; }
+
+        /* ★新しく追加：月別日記用のデザイン */
+        .month-header {
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #000000; /* 月のタイトルは少し太めの線でしっかり区切る */
+        }
+        .month-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        /* 1日分の記事ごとの設定 */
+        .daily-entry {
+            margin-bottom: 50px; /* 日ごとの間隔を広めに取って見やすくする */
+        }
+        .daily-date {
+            color: #666666;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 3px solid #e0e0e0; /* 日付の左側にワンポイントの線を引く */
+        }
+        .daily-body {
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        
+        /* 戻るボタン */
+        .back-to-list {
+            display: inline-block;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666666;
+            text-decoration: none;
+        }
+        .back-to-list:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-title">Diary</div>
+    <div class="menu">
+        <a href="index.html" class="menu-button">Home</a>
+        <a href="papers.html" class="menu-button">Papers</a>
+        <a href="notes.html" class="menu-button">Notes</a>
+        <a href="talks.html" class="menu-button">Talks</a>
+        <a href="diary.html" class="menu-button">Diary</a>
+        <a href="links.html" class="menu-button">Links</a>
+    </div>
+
+    <div class="month-header">
+        <div class="month-title">2026年7月</div>
+    </div>
+    
+
+<div class="daily-entry">
+        <div class="daily-date">2026.07.02</div>
+        <div class="daily-body">
+            6-ffのまとめノートを作った。condensed mathの動画を作った。
+        </div>
+    </div>
+  
+<div class="daily-entry">
+        <div class="daily-date">2026.07.01</div>
+        <div class="daily-body">
+            6-ffのまとめノートを作った（１日目）。帰り道に共同研究に誘われた。実際に動き出すか否かははいろいろな要因に依存するだろうけれど、誘われて嬉しかった。
+        </div>
+    </div>
+
+    
+        
+    
+
+    <a href="diary.html" class="back-to-list">← Diary一覧へ戻る</a>
+
+</body>
+</html>
